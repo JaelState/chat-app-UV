@@ -1,0 +1,261 @@
+body {
+  background-color: #18055e; /* Black background color */
+}
+/* Header Styling */
+.header {
+  background-color: #0a0b38; /* Dark background color */
+  color: white; /* White text color */
+  padding: 20px; /* Increased padding around the text */
+  text-align: center; /* Center align the text */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add a subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+}
+
+.header:hover {
+  background-color: #080922; /* Darker background color on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* Larger shadow on hover for depth effect */
+}
+
+.header-text {
+  margin: 0; /* Remove default margin */
+  font-size: 50px; /* Increase the font size */
+  transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.header-text:hover {
+  color: #f4f4f4; /* Lighter text color on hover */
+}
+
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: #0a0b38;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.login-header {
+  margin: 0 0 20px 0; /* Bottom margin for spacing */
+  text-align: center;
+  color: #f0f0f0; /* Light text color */
+}
+
+.login-button {
+  padding: 10px 20px; /* Increase the padding for better clickability */
+    background-color: white; /* Use a primary color for the background */
+    color: #0a0b38; /* Set the text color to white */
+    border: 2px solid #0a0b38; /* Add a border with the same color as the background */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add a transition effect for better visual feedback */
+}
+
+.login-button:hover {
+  background-color: #080922; /* Darker background color on hover */
+  color: #e9ecef;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #2d1e72; /* Red background color for logout button */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #250e79; /* Darker red background color on hover */
+}
+.login-input {
+  margin-bottom: 10px; /* Bottom margin for spacing between inputs */
+  padding: 5px;
+  border: 1px solid #666666; /* Darker border color */
+  border-radius: 3px;
+  background-color: #1a1a1a; /* Dark background color for inputs */
+  color: #f0f0f0;
+}
+
+
+
+
+
+.sign-up-container {
+  background-color: #0a0b38; /* Dark background color */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add a subtle shadow for depth */
+}
+
+.sign-up-header {
+  margin: 0 0 20px 0; /* Bottom margin for spacing */
+  text-align: center;
+  color: #f0f0f0; /* Light text color */
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up-input {
+  margin-bottom: 10px; /* Bottom margin for spacing between inputs */
+  padding: 5px;
+  border: 1px solid #666666; /* Darker border color */
+  border-radius: 3px;
+  background-color: #1a1a1a; /* Dark background color for inputs */
+  color: #f0f0f0; /* Light text color for inputs */
+}
+
+.sign-up-button {
+  
+    padding: 10px 20px; /* Increase the padding for better clickability */
+    background-color: white; /* Use a primary color for the background */
+    color: #0a0b38; /* Set the text color to white */
+    border: 2px solid #0a0b38; /* Add a border with the same color as the background */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add a transition effect for better visual feedback */
+  }
+
+.sign-up-button:hover {
+  background-color: #080922; /* Darker background color on hover */
+  color: #e9ecef;
+}
+
+  
+/* Chat.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.chat-messages {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align messages to the right */
+  margin-bottom: 15px;
+}
+
+.message-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.message-profile-picture {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Decrease margin between profile picture and message text */
+  border-radius: 50%;
+}
+.message-sender {
+  font-weight: bold;
+}
+
+.message-text {
+  padding: 10px 15px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  margin-right: 38px; /* Add margin to separate message from profile picture */
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #999; /* Use a lighter color for the timestamp */
+  margin-top: 4px; /* Add some space between the message text and the timestamp */
+}
+
+
+.chat-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0a0b38; /* Add a border with a primary color */
+  border-radius: 20px;
+  background-color: #fff; /* Set a white background color */
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease; /* Add a transition effect for better visual feedback */
+}
+
+.chat-input:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #0a0b38; /* Change the border color on focus */
+}
+
+
+.chat-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 10px; /* Add margin to the right of the buttons */
+}
+
+.chat-button {
+  padding: 10px 20px; /* Increase the padding for better clickability */
+  background-color: #0a0b38; /* Use a primary color for the background */
+  color: white; /* Set the text color to white */
+  border: 2px solid #0a0b38; /* Add a border with the same color as the background */
+  border-radius: 20px; /* Add border radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a transition effect for better visual feedback */
+}
+
+.chat-button:hover {
+  background-color: #0e0f4e; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+.chat-button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+
+.current-user .message-text {
+  background-color: #0a0b38; /* Background color for messages sent by the current user */
+  color: white; /* Text color for messages sent by the current user */
+}
+
+.other-user .message-text {
+  background-color: #e9ecef; /* Background color for messages sent by other users */
+}
+
+.current-user {
+  align-items: flex-start; /* Align messages sent by the current user to the left */
+}
+
+.other-user {
+  align-items: flex-end; /* Align messages sent by other users to the right */
+}
